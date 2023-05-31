@@ -1,0 +1,8 @@
+<h2>Editar Tarea</h2>
+<app-formulario-tareas [editar]="true" *ngIf="modelo"
+[modeloTarea]="modelo"
+(submit)="guardarCambios($event)"></app-formulario-tareas>
+
+<mat-spinner *ngIf="!modelo">
+
+</mat-spinner>
